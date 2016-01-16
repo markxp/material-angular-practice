@@ -1,3 +1,4 @@
+'use strict';
 /// <reference path="angularjs/angular-animate.d.ts" />
 /// <reference path="angularjs/angular-component-router.d.ts" />
 /// <reference path="angularjs/angular-cookies.d.ts" />
@@ -8,4 +9,6 @@
 /// <reference path="angularjs/angular.d.ts" />
 /// <reference path="angularjs/legacy/angular-scenario-1.2.d.ts" />
 /// <reference path="es6-promise/es6-promise.d.ts" />
-let;
+let app = angular.module("myapp",["ng","firebase","ngMaterial","ngRoute"]);
+
+
