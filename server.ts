@@ -1,11 +1,12 @@
-/// <reference path="typings/node/node.d.ts" />
+/// <reference path="./typings/node/node.d.ts" />
+'use strict';
 
-(function(){
-    var express = require("express");
-    var PORT = process.env.PORT || 3000;
-    var app = express();
+let express = require("express");
+let PORT = process.env.PORT || 3000;
+let app = express();
+
+app.use(express.static(__dirname + '/public'));
+app.listen(PORT, function () { console.log(`node server is ruuning : ${PORT}`);
     
-    app.use(express.static(__dirname + '/public'));
-    app.listen(PORT, function () { console.log('nodejs is now running on port');
-    });
-})();
+});
+
